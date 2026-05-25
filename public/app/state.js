@@ -57,6 +57,7 @@ const state = {
   staleRetryKey: null,
   clockLoading: false,
   validatorMapOpen: false,
+  mapStatsOpen: false,
   validatorMapNodesByPeer: null,
   clockRequestSeq: 0,
   lastClockRefreshAttempt: 0,

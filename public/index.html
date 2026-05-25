@@ -112,6 +112,17 @@
         </span>
         <span>MAP</span>
       </button>
+      <button id="mapStatsToggle" class="map-toggle" type="button" aria-expanded="false" aria-controls="mapStatsPanel">
+        <span class="map-toggle-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M5 19V9"></path>
+            <path d="M12 19V5"></path>
+            <path d="M19 19v-7"></path>
+            <path d="M3.5 19h17"></path>
+          </svg>
+        </span>
+        <span>STATS</span>
+      </button>
     </section>
 
     <section id="validatorMapPanel" class="validator-map-panel" aria-label="Validator world map" hidden>
@@ -157,6 +168,16 @@
         <div id="validatorMapCanvas" class="validator-map-canvas"></div>
         <div id="validatorMapStatus" class="validator-map-status">Loading map</div>
       </div>
+    </section>
+
+    <section id="mapStatsPanel" class="map-stats-panel" aria-label="Validator network stats" hidden>
+      <div class="map-stats-heading">
+        <div>
+          <h2 id="mapStatsTitle">Validator Stats</h2>
+          <span id="mapStatsSummary" class="map-stats-summary">-</span>
+        </div>
+      </div>
+      <div id="mapStatsContent" class="map-stats-content"></div>
     </section>
 
     <section class="rounds-grid" aria-label="Validator rounds">

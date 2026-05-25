@@ -35,6 +35,9 @@ async function refreshValidatorMapNodesForSnapshot() {
   state.validatorMapNodesByPeer = validatorMapNodeMapByPeer(validatorMapNodes);
   updateValidatorMapTitle();
   updateValidatorMapSummary();
+  if (state.mapStatsOpen) {
+    renderMapStats();
+  }
   refreshValidatorMapSource();
   return validatorMapNodes;
 }
